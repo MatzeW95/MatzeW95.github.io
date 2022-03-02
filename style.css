@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+:root {
+    --backgroundColor: rgb(24, 24, 24);
+    --navigationColor: rgb(33, 33, 33);
+    --fontColor: #ffffff;
+}
+
+header {
+    background-color: var(--navigationColor);
+    height: 5vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: auto;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--fontColor);
+
+    background-color: var(--backgroundColor);
+}
+
+a {
+    color: var(--fontColor);
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 90%;
+    margin: auto;
+}
+
+nav > a:first-child {
+    margin-right: auto;
+}
+
+nav > a {
+    padding: 0.5rem 1rem;
+}
+
+main {
+    height: 95vh;
+    margin-top: 5vh;
+}
+
+.contentContainer {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2 {
+    margin-top: 3rem;
+}
+
+.projectContainerMultiple, .projectContainerSingle {
+    width: 100%;
+}
+
+.projectContainerSingle {
+    display: flex;
+    flex-direction: row;
+}
+
+.imgContainer {
+    width: 45%;
+}
+
+.imgProject {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.projectDescriptionContainer {
+    box-sizing: border-box;
+    width: 55%;
+    padding: 0 3rem;
+    margin: 0px;
+}
+
+.linkContainer {
+    padding-top: 1rem;
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.linkText {
+    margin: 0.5rem 0 0;
+}
+
+.imgLiveSite {
+    width: 45px;
+}
+
+.imgRepository {
+    width: 45px;
+}
+
+.projectContainerMultiple {
+    display: flex;
+    flex-direction: column;
+}
+
+.projectContainer3Way {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.container3Way {
+    width: 30%;
+    border: 2px solid var(--navigationColor);
+    border-radius: 5px;
+    padding-bottom: 1rem;
+}
+
+.img3Way {
+    width: 100%;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+.p3Way {
+    margin: 0px;
+    padding: 1rem;
+}

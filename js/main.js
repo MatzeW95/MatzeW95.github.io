@@ -1,0 +1,18 @@
+var para = document.getElementById("parallax");
+var item = document.getElementsByClassName("parallaxItem");
+
+var parallax1 = document.getElementById("heroHeadline");
+
+para.addEventListener("mousemove", e => {
+
+    var x = e.offsetX;
+    var y = e.offsetY;
+
+    console.log(x + y);
+
+    item[0].innerHTML = x;
+    item[1].innerHTML = y;
+
+    parallax1.style.top = 400 - y/100*7 + "px";
+    parallax1.style.left = 400 - x/100*7 + "px";
+});

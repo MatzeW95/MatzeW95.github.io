@@ -13,6 +13,7 @@ header {
     position: fixed;
     top: 0;
     left: auto;
+    z-index: 1;
 }
 
 body {
@@ -49,6 +50,38 @@ nav > a {
     padding: 0.5rem 1rem;
 }
 
+footer {
+    background-color: var(--navigationColor);
+    width: 100%;
+}
+
+.footerContainer {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footerItem {
+    width: 30%;
+    margin: 0.5rem 0;
+}
+
+.footerItem > a {
+    width: fit-content;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.footerItem > a > img {
+    width: 30px;
+    margin-right: 0.5rem;
+}
+
 main {
     height: 95vh;
     margin-top: 5vh;
@@ -56,6 +89,7 @@ main {
 
 .contentContainer {
     width: 90%;
+    min-height: 100vh;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -137,10 +171,32 @@ h2 {
     border: 2px solid var(--navigationColor);
     border-radius: 5px;
     padding-bottom: 1rem;
+    overflow: hidden;
+}
+
+.container3WayImage {
+    width: 100%;
+    height: 15rem;
 }
 
 .img3Way {
-    width: 100%;
+    min-width: 100%;
+    height: 100%;
+    position: relative; 
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 0;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+.imgMore {
+    width: 30%;
+    position: relative;
+    top: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 0;
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
 }

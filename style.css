@@ -107,23 +107,38 @@ main {
 }
 
 #parallaxOne {
-   
+    position: absolute;
+    top: 200px;
+    left: 200px;
+    z-index: -1;
 }
 
 #parallaxTwo {
-    
+    position: absolute;
+    top: 200px;
+    left: 200px;
+    z-index: -1;
 }
 
 #parallaxThree {
-    
+    position: absolute;
+    top: 200px;
+    left: 200px;
+    z-index: -1;
 }
 
 #parallaxFour {
-    
+    position: absolute;
+    top: 200px;
+    left: 200px;
+    z-index: -1;
 }
 
 #parallaxFive {
-    
+    position: absolute;
+    top: 200px;
+    left: 200px;
+    z-index: -1;
 }
 
 #weather, #covid19 {

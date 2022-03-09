@@ -20,7 +20,7 @@ header {
 body {
     margin: 0px;
     padding: 0px;
-
+    width: 100%;
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-size: 18px;
@@ -240,7 +240,7 @@ h2 {
 }
 
 /* If nav > 3 items add burger menu to this viewport */
-@media screen and (max-width: 1299px) {
+@media screen and (max-width: 1299px) and (min-width: 900px) {
     .projectContainerSingle {
         display: flex;
         flex-direction: column;
@@ -301,6 +301,110 @@ h2 {
     }
 }
 
-@media screen and (max-width: 1299px) {
+@media screen and (max-width: 899px) {
+    .projectContainerSingle {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
+    .contentContainer{
+        margin-bottom: 5rem;
+    }
+
+    .imgContainer {
+        width: 80%;
+    }
+
+    .projectDescriptionContainer {
+        width: 90%;
+    }
+
+    .projectContainer3Way {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 2rem;
+    }
+
+    .container3Way {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 60%;
+        padding: 0px;
+    }
+
+    .linkContainer {
+        display: flex;
+        flex-direction: row;
+        margin: 0px;
+        padding: 0px 0rem 1rem 0px;
+        justify-content: space-evenly;
+    }
+
+    .container3WayImage {
+        min-width: 45%;
+        background-position: center;
+    }
+
+    .projectDescriptionContainer > .linkContainer {
+        display: flex;
+        flex-direction: row;
+        margin: 0 auto;
+        padding: 0px;
+        justify-content: space-between;
+    }
+
+    #frontendmentor {
+        margin-bottom: 0px;
+    }
+
+    footer {
+        margin-top: 1rem;
+    }
+    
+    .footerContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footerItem {
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 700px) {
+
+    .contentContainer{
+        width: 100%;
+
+        margin: 0 auto 5rem;
+    } 
+
+    .container3Way {
+        width: 90%;
+    }
+
+    .imgContainer {
+        width: 90%;
+    }
+
+    .projectDescriptionContainer {
+        width: 100%;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    .linkContainer {
+        width: auto;
+        column-gap: 4rem;
+    }
+
+    .linkText {
+        text-align: center;
+        width: 100px;
+    }
 }

@@ -412,6 +412,11 @@ h2 {
 
     .projectDescriptionContainer {
         width: 100%;
+        padding: 0 2rem;
+    }
+
+    .projectDescriptionContainer > .linkContainer {
+        justify-content: space-evenly;
     }
 
     h2 {

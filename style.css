@@ -238,3 +238,56 @@ h2 {
     margin: 0px;
     padding: 1rem;
 }
+
+/* If nav > 3 items add burger menu to this viewport */
+@media screen and (max-width: 1299px) {
+    .projectContainerSingle {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contentContainer{
+        margin-bottom: 5rem;
+    }
+
+    .projectContainer3Way {
+        display: flex;
+        flex-direction: column;
+        row-gap: 2rem;
+    }
+
+    .container3Way {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        padding: 0px;
+    }
+
+    .linkContainer {
+        display: flex;
+        flex-direction: column;
+        margin: 0px;
+        padding: 0px;
+        justify-content: space-evenly;
+    }
+
+    .container3WayImage {
+        min-width: 45%;
+    }
+
+    .projectDescriptionContainer > .linkContainer {
+        display: flex;
+        flex-direction: row;
+        margin: 0 auto;
+        justify-content: space-between;
+    }
+
+    #frontendmentor {
+        margin-bottom: 0px;
+    }
+
+    footer {
+        margin-top: 1rem;
+    }
+}

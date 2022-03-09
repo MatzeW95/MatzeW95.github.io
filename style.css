@@ -42,6 +42,10 @@ nav {
     margin: auto;
 }
 
+#navBurger {
+    display: none;
+}
+
 nav > a:first-child {
     margin-right: auto;
 }
@@ -302,6 +306,20 @@ h2 {
 }
 
 @media screen and (max-width: 899px) {
+
+    #navFirst, #navSecond, #navThird, #navFourth {
+        display: none;
+    }
+
+    #navName {
+        padding-left: 0px;
+    }
+
+    #navBurger {
+        display: block;
+        padding-right: 0px;
+    }
+
     .projectContainerSingle {
         display: flex;
         flex-direction: column;

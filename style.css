@@ -50,9 +50,10 @@ nav {
 }
 
 #navHamburgerMenu {
+    height: 30px;
     display: none;
     padding: 0;
-    cursor:pointer;
+    cursor: pointer;
 }
 
 #menuMobile {

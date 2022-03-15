@@ -8,7 +8,7 @@ var langSelect = 0;
 
 langButton.addEventListener("click", function(){
 
-    //updateLanguage(langSelect);
+    updateLanguage(langSelect);
 
     if (langSelect == 0) {  //language german
         langSelect = 1;
@@ -50,10 +50,10 @@ function updateLanguage(languageNumber) {
 
     switch (languageNumber) {
         case 0:
-            selection = language.german;
+            selection = language.english;
             break;
         case 1:
-            selection = language.english;
+            selection = language.german;
             break;
     }
     

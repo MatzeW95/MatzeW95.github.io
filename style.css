@@ -82,6 +82,18 @@ nav > a {
     margin: 0.5rem 1rem;
 }
 
+#buttonLanguage {
+    border: 0px;
+    outline: none;
+    background-image: url("./img/german.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-color: rgba(0, 0, 0, 0);
+    width: 25px;
+    height: 1.4rem;
+    cursor: pointer;
+}
+
 footer {
     margin-top: 5rem;
     background-color: var(--navigationColor);

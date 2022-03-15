@@ -2,22 +2,24 @@
 //possible language array 
 //0 german
 //1 english
-/*
-var langButton = document.getElementById("languageSelection");
+
+var langButton = document.getElementById("buttonLanguage");
 var langSelect = 0;
 
 langButton.addEventListener("click", function(){
 
-    updateLanguage(langSelect);
+    //updateLanguage(langSelect);
 
     if (langSelect == 0) {  //language german
         langSelect = 1;
+        langButton.style.backgroundImage = "url(./img/english.png)";
     }
     else if(langSelect == 1) { //language english
         langSelect = 0;
+        langButton.style.backgroundImage = "url(./img/german.png)";
     }
 });
-*/
+
 const language = {
     german: {
         navFirst: "Wetter",

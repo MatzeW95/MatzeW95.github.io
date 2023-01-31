@@ -6,6 +6,10 @@
     --fontColor: #ffffff;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 header {
     background-color: var(--navigationColor);
     height: 5vh;

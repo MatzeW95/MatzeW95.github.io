@@ -6,6 +6,11 @@
     --fontColor: #ffffff;
 }
 
+/* hide because of to many projects */
+#navFirst, #navSecond, #navThird, #navFourth, #navHamburgerMenu {
+    display: none;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -110,7 +115,7 @@ footer {
     margin: 0 auto;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .footerItem {
@@ -146,7 +151,7 @@ main {
     text-align: center;
 }
 
-#weather, #covid19 {
+#weather, #covid19, #calculator, #currency-exchange, #fuel-price, #snake, #TicTacToe {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -185,7 +190,7 @@ h2 {
 .imgProject {
     width: 100%;
     height: auto;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
 .projectDescriptionContainer {
@@ -238,7 +243,7 @@ h2 {
 .container3Way {
     width: 30%;
     border: 2px solid var(--navigationColor);
-    border-radius: 5px;
+    border-radius: 10px;
     padding-bottom: 1rem;
     overflow: hidden;
 }
@@ -360,9 +365,10 @@ h2 {
     #navName {
         padding-left: 0px;
     }
-
+    
+/*  only display none when too many projects */
     #navHamburgerMenu {
-        display: block;
+        display: none;
         padding-right: 0px;
     }
 
